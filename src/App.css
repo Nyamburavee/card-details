@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: px;
+  gap: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards{
+  display: flex;
+  flex-direction: column;
+
+}
+.front{
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.cards img{
+  max-width: 400px;
+}
+
+.img-back{
+  margin-left: 70px;
+  margin-top: 20px;
+  
+}
+
+input{
+  margin-bottom: 20px;
+  display: block;
+  height: 30px;
+  margin-top: 5px;
+  
+}
+label{
+
+  color: hsl(279, 35%, 21%);
+  font-weight: bold;
+
+}
+
+.holder-name{
+  width: 400px;
+ 
+}
+.card-number{
+  width: 400px;
+  
+}
+
+.date-cvc{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.exp-date{ 
+  width: 100px;
+}
+.cvc{
+  width: 150px;
+}
+
+.confirm-btn{
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+
+
+.img-inner{
+  position:absolute;
+  top: 10px;
+  padding: 20px;
+  width:350px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+
+}
+ .card-logo{
+  margin-bottom: 40px;
+  width: 50px;
+ }
+ .img-number{
+  font: 14px;
+  letter-spacing: 3px;
+ }
+
+ .card-bottom-text{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;  
+ }
+
+ .submited img{
+  width: 50px;
+  margin-bottom: 10px;
+ }
+ .submited{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ }
+
+ .Thanks{
+  color: hsl(279, 46%, 26%);
+  margin-bottom: 15px;
+  
+ }
+
+ .submited p{
+  color: hsl(270, 19%, 48%);
+
+ }
+
+ .cont-button{
+  background-color:  hsl(278, 68%, 11%);
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 20px;
   color: white;
-}
+  padding: 10px;
+ }
 
-.App-link {
-  color: #61dafb;
+ @media screen and (max-width:500px) {
+  body{
+    background-image:url('/public/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  
+    
+    
+  .main{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ 
+ 
+ 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
